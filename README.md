@@ -18,3 +18,8 @@ An experimental IDE to make creation of Amnesia Custom Stories easier
     <img src="https://img.shields.io/badge/made%20with-.NET%206-blueviolet?style=for-the-badge">
   </a>
 </p>
+
+---
+
+Icon used as per the GPL-3 license:
+https://iconarchive.com/show/papirus-apps-icons-by-papirus-team/amnesia-the-dark-descent-icon.html
