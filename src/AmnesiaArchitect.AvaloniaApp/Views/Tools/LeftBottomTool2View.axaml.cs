@@ -1,17 +1,14 @@
-﻿using Avalonia;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace AmnesiaArchitect.AvaloniaApp.Views
+namespace AmnesiaArchitect.AvaloniaApp.Views.Tools
 {
-    public partial class MainWindow : Window
+    public partial class LeftBottomTool2View : UserControl
     {
-        public MainWindow()
+        public LeftBottomTool2View()
         {
             InitializeComponent();
-#if DEBUG
-            this.AttachDevTools();
-#endif
         }
 
         private void InitializeComponent()

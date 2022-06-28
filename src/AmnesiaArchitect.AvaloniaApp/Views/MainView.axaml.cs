@@ -1,17 +1,13 @@
-﻿using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 namespace AmnesiaArchitect.AvaloniaApp.Views
 {
-    public partial class MainWindow : Window
+    public partial class MainView : UserControl
     {
-        public MainWindow()
+        public MainView()
         {
-            InitializeComponent();
-#if DEBUG
-            this.AttachDevTools();
-#endif
+            this.InitializeComponent();
         }
 
         private void InitializeComponent()

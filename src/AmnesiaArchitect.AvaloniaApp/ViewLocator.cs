@@ -1,6 +1,7 @@
 using AmnesiaArchitect.AvaloniaApp.ViewModels;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
+using Dock.Model.Core;
 using System;
 
 namespace AmnesiaArchitect.AvaloniaApp
@@ -24,7 +25,7 @@ namespace AmnesiaArchitect.AvaloniaApp
 
         public bool Match(object data)
         {
-            return data is ViewModelBase;
+            return data is ViewModelBase || data is IDockable;
         }
     }
 }

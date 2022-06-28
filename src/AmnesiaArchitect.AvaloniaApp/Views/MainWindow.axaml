@@ -1,17 +1,20 @@
-<Window xmlns="https://github.com/avaloniaui"
+﻿<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:AmnesiaArchitect.AvaloniaApp.ViewModels"
+        xmlns:vm="clr-namespace:AmnesiaArchitect.AvaloniaApp.ViewModels;assembly=AmnesiaArchitect.AvaloniaApp"
+        xmlns:idc="clr-namespace:Dock.Avalonia.Controls;assembly=Dock.Avalonia"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AmnesiaArchitect.AvaloniaApp.Views.MainWindow"
+        Width="800" Height="450" WindowState="Normal"
+        Background="{DynamicResource ThemeBackgroundBrush}"
         Icon="/Assets/amnesia-architect-logo.ico"
-        Title="Amnesia Architect">
+        Title="AmnesiaArchitect.AvaloniaApp">
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <idc:DockControl Layout="{Binding Layout}"/>
 
 </Window>
