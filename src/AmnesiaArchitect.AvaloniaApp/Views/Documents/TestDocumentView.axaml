@@ -3,12 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:ae="clr-namespace:AvaloniaEdit;assembly=AvaloniaEdit"
+			 xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Avalonia.Xaml.Interactivity"
+			 xmlns:behaviors="clr-namespace:AmnesiaArchitect.AvaloniaApp.Behaviors;assembly=AmnesiaArchitect.AvaloniaApp"
              mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400">
-	<Grid Focusable="True" Background="Gray">
-		<StackPanel>
-			<TextBlock Text="{Binding Id}"/>
-			<TextBlock Text="{Binding Title}"/>
-			<TextBlock Text="{Binding Context}"/>
-		</StackPanel>
+	<Grid Focusable="True" Background="#222">
+		<ae:TextEditor x:Name="textCode"
+                       Margin="0"
+                       Background="White"
+                       Foreground="Black"
+                       SyntaxHighlighting="C#"
+                       HorizontalScrollBarVisibility="Auto"
+                       VerticalScrollBarVisibility="Auto"
+                       FontFamily="{DynamicResource CodeFontFamily}"
+                       FontWeight="Normal"
+                       FontSize="14"
+                       WordWrap="False"
+					   Text="void OnStart() {} // Hello, Amnesia!">
+			<i:Interaction.Behaviors>
+				<behaviors:DocumentTextBindingBehavior Text="{Binding Code, Mode=TwoWay}"/>
+			</i:Interaction.Behaviors>
+		</ae:TextEditor>
 	</Grid>
 </UserControl>
