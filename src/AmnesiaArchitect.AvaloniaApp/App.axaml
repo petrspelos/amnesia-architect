@@ -9,5 +9,6 @@
 	<Application.Styles>
 		<FluentTheme Mode="Dark"/>
 		<StyleInclude Source="avares://Dock.Avalonia/Themes/DockFluentTheme.axaml"/>
+		<StyleInclude Source="avares://AvaloniaEdit/AvaloniaEdit.xaml" />
 	</Application.Styles>
 </Application>
