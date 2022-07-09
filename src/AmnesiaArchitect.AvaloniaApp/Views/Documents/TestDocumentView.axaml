@@ -19,7 +19,7 @@
                        FontWeight="Normal"
                        FontSize="14"
                        WordWrap="False"
-					   Text="void OnStart() {} // Hello, Amnesia!">
+					   Text="">
 			<i:Interaction.Behaviors>
 				<behaviors:DocumentTextBindingBehavior Text="{Binding Code, Mode=TwoWay}"/>
 			</i:Interaction.Behaviors>
